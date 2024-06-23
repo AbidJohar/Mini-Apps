@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-start mt-3 justify-center h-fit">
+    <div class="max-w-sm bg-gray-200 p-6 rounded-lg shadow-md">
+        <div class="text-center mb-4">
+            <h2 class="text-2xl font-bold text-gray-800">Current Weather</h2>
+            <form id="location-form" class="mb-4">
+                <input type="text" id="location-input" class="w-full p-2 rounded border border-gray-300 mb-2" placeholder="Enter location">
+                <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Check Weather</button>
+            </form>
+            <p class="text-gray-600" id="location">Pakistan</p>
+        </div>
+        <div class="flex items-center justify-center mb-4">
+            <img src="https://openweathermap.org/img/wn/01d.png" alt="Weather Icon" id="weather-icon" class="w-20 h-20">
+        </div>
+        <div class="text-center mb-4">
+            <h3 class="text-4xl font-bold text-gray-800" id="temperature">25°C</h3>
+            <p class="text-gray-600" id="weather-description">Clear Sky</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 text-center text-gray-600">
+            <div>
+                <p class="font-semibold" id="humidity">Humidity: 60%</p>
+            </div>
+            <div>
+                <p class="font-semibold" id="wind-speed">Wind Speed: 10 km/h</p>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+<script src="script.js"></script>
+</html>
